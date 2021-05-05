@@ -7,6 +7,6 @@ WantedBy=multi-user.target
 [Service]
 ExecStart=/home/bbb-validator/bbb-edge-stream/venv/bin/python3 manage.py runserver 127.0.0.1:8006
 User=bbb-validator
-WorkingDirectory=/home/bbb-validator/bbb-edge-stream/bbb_validator/
+WorkingDirectory=/home/bbb-validator/bbb-edge-stream/validator/
 Restart=always
 KillSignal=SIGKILL
