@@ -1,3 +1,3 @@
-[submodule "validator/bbb-common-api"]
+[submodule "validator/bbb_common_api"]
 	path = validator/bbb-common-api
 	url = https://github.com/myOmikron/bbb-common-api.git
