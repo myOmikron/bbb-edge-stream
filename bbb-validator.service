@@ -1,0 +1,12 @@
+[Unit]
+Description=Validator Service for bbb-stream
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/home/bbb-validator/bbb-validator/venv/bin/python3 manage.py runserver 127.0.0.1:8006
+User=bbb-validator
+WorkingDirectory=/home/bbb-validator/bbb-validator/bbb_validator/
+Restart=always
+KillSignal=SIGKILL
