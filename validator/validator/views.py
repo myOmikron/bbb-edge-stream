@@ -14,4 +14,4 @@ class Validate(View):
             channel = Channel.objects.get(streaming_key=request.POST["name"])
         except Channel.DoesNotExist:
             return HttpResponse("Not valid", status=404)
-        return HttpResponseRedirect(f"rtmp://127.0.0.1/accept/{channel.meeting_id}", status=302)
+        return HttpResponseRedirect(f"rtmp://127.0.0.1/redirect/{channel.meeting_id}", status=302)
